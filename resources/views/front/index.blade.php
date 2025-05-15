@@ -123,7 +123,7 @@
 					<div class="card-detail w-full flex items-end p-[30px] relative z-20">
 						<div class="flex flex-col gap-[10px]">
 							<p class="text-white">Featured</p>
-							<a href="details.html" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$entertainment_featured_articles->name}}</a>
+							<a href="{{route('front.details', $entertainment_featured_articles->slug)}}" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$entertainment_featured_articles->name}}</a>
 							<p class="text-white">{{$entertainment_featured_articles->created_at->format('M d, Y')}}</p>
 						</div>
 					</div>
@@ -165,7 +165,7 @@
 					<div class="card-detail w-full flex items-end p-[30px] relative z-20">
 						<div class="flex flex-col gap-[10px]">
 							<p class="text-white">Featured</p>
-							<a href="details.html" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$business_featured_articles->name}}</a>
+							<a href="{{route('front.details', $business_featured_articles->slug)}}" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$business_featured_articles->name}}</a>
 							<p class="text-white">{{$business_featured_articles->created_at->format('M d, Y')}}</p>
 						</div>
 					</div>
@@ -209,7 +209,7 @@
 					<div class="card-detail w-full flex items-end p-[30px] relative z-20">
 						<div class="flex flex-col gap-[10px]">
 							<p class="text-white">Featured</p>
-							<a href="details.html" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$automotive_featured_articles->name}}</a>
+							<a href="{{route('front.details', $automotive_featured_articles->slug)}}" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$automotive_featured_articles->name}}</a>
 							<p class="text-white">{{$automotive_featured_articles->created_at->format('M d, Y')}}</p>
 						</div>
 					</div>
